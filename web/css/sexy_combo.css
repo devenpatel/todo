@@ -1,0 +1,176 @@
+body {
+	margin: 0;
+	padding: 20px;
+	font-family: arial, verdana, Helvetica, sans-serif !important;
+	font-size: 12px;
+	background: #fff;
+	background: url(../images/mainBg.jpg) repeat-x;
+}
+* {
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p,form,img {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+	border: 0;
+}
+
+.clear {
+	clear: both;
+	font-size: 0.01px;
+}
+
+/**** START COMBO CLASSE******************/
+div.combo {
+	white-space: nowrap;
+	height: 21px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: 312px;
+}
+
+div.combo input {
+	margin: 0 0 0 0;
+	font: normal 15px arial, tahoma, helvetica, sans-serif;
+	background: #fff url(../images/text-bg.gif) repeat-x 0 0;
+	border: 0 solid #B5B8C8;
+	height: 20px;
+	line-height: 18px;
+	vertical-align: middle;
+	left: 0;
+	top: 0;
+	padding: 10px;
+	width: 277px;
+}
+
+div.combo div.icon {
+	width: 35px;
+	height: 40px;
+	border: 0;
+	background: transparent url(../images/trigger.gif) no-repeat 0
+		0;
+	cursor: pointer;
+	top: 0;
+	left: 277px;
+}
+
+div.combo div.list-wrapper {
+	left: 0;
+	top: 37px;
+	border-top: 3px solid #fff;
+	border-right: 3px solid #4a87a2;
+	border-bottom: 3px solid #4a87a2;
+	border-left: 3px solid #4a87a2;
+	background-color: #FFFFFF;
+	padding: 0;
+	margin: 0;
+	width: 270px;
+	bottom: auto;
+}
+
+div.combo div.list-wrapper-up {
+	top: auto;
+	bottom: 21px;
+}
+
+div.combo ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 200px;
+}
+
+div.combo  li {
+	padding: 5px 5px 5px 10px;
+	font: normal 14px arial, tahoma, helvetica, sans-serif;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	border-top: 1px solid #ccc;
+	margin: 0;
+}
+
+div.combo li.active {
+	background-color: rgb(223, 242, 253);
+}
+
+/*for IE*/
+div.combo a,div.combo a:visited,div.combo a:active {
+	display: block;
+	width: 100%;
+	width: 146px;
+	text-decoration: none;
+	font: normal 14px arial, tahoma, helvetica, sans-serif;
+	color: #000000;
+	cursor: pointer;
+	margin: 0;
+	height: 20px;
+}
+
+div.combo input.empty {
+	color: gray;
+}
+
+a.to-highlight:hover {
+	background-color: rgb(223, 232, 246);
+}
+
+/****************/ /*wrapper of all elements*/
+div.combo {
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+/*text input*/
+.combo input {
+	
+}
+
+/*icon*/
+.combo div.icon {
+	position: absolute;
+}
+
+/*list wrapper*/
+.combo div.list-wrapper {
+	position: absolute;
+	overflow: hidden;
+	/*we should set height and max-height explicitly*/
+	height: 200px;
+	max-height: 200px;
+	/*should be always at the top*/
+	z-index: 99999;
+}
+
+/*"drop-up" list wrapper*/
+.combo div.list-wrapper-up {
+	
+}
+
+/*dropdown list*/
+.combo ul {
+	
+}
+
+/*dropdown list item*/
+.combo  li {
+	height: 20px;
+}
+
+/*active (hovered) list item*/
+.combo li.active {
+	background: #ff00ff;
+}
+
+.combo .visible {
+	display: block;
+}
+
+.combo .invisible {
+	display: none;
+}
+
+/**** END COMBO CLASSE******************/
